@@ -1,7 +1,5 @@
 [build]
   command = "sed -i 's/provider = \"sqlite\"/provider = \"postgresql\"/' prisma/schema.prisma && npx prisma generate && npx next build"
-  publish = ".next"
-  functions = ".netlify/functions"
 
 [build.environment]
   NEXT_DISABLE_PINNED_VERSION = "1"
